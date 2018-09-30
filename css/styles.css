@@ -37,6 +37,16 @@
 			list-style: none;
 		}
 
+		footer {
+			background-color: #444444;
+			color: #aaaaaa;
+			font-size: 8pt;
+			letter-spacing: 1px;
+			padding: 25px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
 		/* ===== Nested ===== */
 		header a {
 			font-size: 14pt;
@@ -142,16 +152,6 @@
 		#restaurant-address {
 		  font-size: 12pt;
 		  margin: 10px 0;
-		}
-
-		#footer {
-			background-color: #444444;
-			color: #aaaaaa;
-			font-size: 8pt;
-			letter-spacing: 1px;
-			padding: 25px;
-			text-align: center;
-			text-transform: uppercase;
 		}
 
 		/* ===== Nested ===== */
@@ -272,9 +272,6 @@
 
 /* =============== Computer Changes =============== */
 @media screen and (min-width: 1000px) {
-	footer {
-		margin: 0 50% 0 0;
-	}
 	#restaurants-container li {
 		width: calc(33% - 66px);
 	}
@@ -285,6 +282,9 @@
 		position: fixed;
 		left: 0;
 		width: 50%;
+	}
+	#index-map-container {
+		height: 400px;
 	}
 	#restaurant-map-container {
 		position: fixed;
@@ -297,6 +297,9 @@
 		margin: 71px 50% 0 0; 
 	}
 	#reviews-container {
+		margin: 0 50% 0 0;
+	}
+	#restaurant-footer {
 		margin: 0 50% 0 0;
 	}
 }
