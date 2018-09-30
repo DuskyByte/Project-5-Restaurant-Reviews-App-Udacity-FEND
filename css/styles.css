@@ -231,3 +231,72 @@
 		#reviews-list li p {
 			margin: 0 0 10px;
 		}
+/* =============== Tablet Changes =============== */
+@media screen and (min-width: 500px) {
+	header {
+		height: 30px;
+	}
+	#restaurants-container ul {
+		overflow:hidden;
+	}
+	#restaurants-container li {
+		float: left;
+		display: inline;
+		margin: 0 6px 15px;
+		width: calc(50% - 66px);
+	}
+	#restaurants-container h1 {
+		font-size: 12pt;
+		margin: 8px 0;
+		text-transform: none;
+	}
+	#map {
+		height: 200px;
+	}
+	#index-map-container {
+		margin: 30px 0 0;
+	}
+	#restaurant-map-container {
+		margin: 71px 0 0;
+	}
+	#filter-container {
+		height: 51px;
+	}
+	#filter-container h2 {
+		display: inline;
+	}
+	#breadcrumb-container {
+		top: 30px;
+	}
+}
+
+/* =============== Computer Changes =============== */
+@media screen and (min-width: 1000px) {
+	footer {
+		margin: 0 50% 0 0;
+	}
+	#restaurants-container li {
+		width: calc(33% - 66px);
+	}
+	#map {
+		height: 100%;
+	}
+	#breadcrumb-container {
+		position: fixed;
+		left: 0;
+		width: 50%;
+	}
+	#restaurant-map-container {
+		position: fixed;
+		right: 0;
+		margin: 30px 0 0;
+		width: 50%;
+		height: calc(100% - 30px);
+	}
+	#restaurant-container {
+		margin: 71px 50% 0 0; 
+	}
+	#reviews-container {
+		margin: 0 50% 0 0;
+	}
+}
