@@ -197,7 +197,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
     marker.on("click", onClick);
     function onClick() {
-      window.location.href = marker.options.url;
+     	window.location.href = marker.options.url;
     }
     self.markers.push(marker);
   });
@@ -213,4 +213,14 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     self.markers.push(marker);
   });
 } */
+
+/**
+ * Add Service Worker to application.
+ */
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', function() {
+		navigator.serviceWorker.register('sw.js')
+	});
+};
+
 
